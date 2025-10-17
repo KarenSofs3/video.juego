@@ -133,4 +133,24 @@
     right: -30%;
 
   }
+
+    @keyframes pulse {
+      0% {
+        transform: translate(-50%, -50%) scale(1);
+      }
+
+      50% {
+        transform: translate(-50%, -50%) scale(1.2);
+      }
+
+      100% {
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+    .auto:hover,
+    .volante:hover,
+    .kilometraje:hover {
+      animation: pulse 0.8s infinite ease-in-out;
+      cursor: pointer;
+    }
 </style>
